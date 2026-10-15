@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Stark | Software sob medida para a sua empresa</title>
+	<meta name="description" content="Sistemas web, aplicativos, automações e sites sob medida, desenhados para o jeito que a sua empresa trabalha.">
+	<meta property="og:title" content="Stark | Software sob medida">
+	<meta property="og:description" content="Sistemas, aplicativos e automações feitos para o jeito que a sua empresa trabalha.">
+	<meta name="theme-color" content="#0C0A07">
+	<link rel="icon" type="image/svg+xml" href="assets/logo-simbolo.svg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+	<a class="skip" href="#inicio">Pular para o conteúdo</a>
+
+	<!-- Símbolo reutilizado pela página -->
+	<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+		<symbol id="simbolo" viewBox="0 0 100 100">
+			<polygon points="34,14 96,14 82,44 20,44"/>
+			<polygon points="18,56 80,56 66,86 4,86"/>
+		</symbol>
+	</svg>
+
+	<header class="nav" id="nav">
+		<div class="nav-in">
+			<a class="brand" href="#inicio" aria-label="Stark, início">
+				<svg class="brand-mark" aria-hidden="true"><use href="#simbolo"/></svg>
+				<span>Stark</span>
+			</a>
+			<nav class="nav-links" id="menu" aria-label="Principal">
+				<a href="#servicos">Serviços</a>
+				<a href="#simulador">Simulador</a>
+				<a href="#processo">Processo</a>
+				<a href="#quem-somos">Quem somos</a>
+				<a href="#duvidas">Dúvidas</a>
+				<a class="btn btn-grad btn-sm nav-cta-mobile" href="#contato">Iniciar projeto</a>
+			</nav>
+			<a class="btn btn-grad btn-sm nav-cta" href="#contato">Iniciar projeto</a>
+			<button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+				<span></span><span></span>
+			</button>
+		</div>
+		<div class="nav-progress" aria-hidden="true"><span id="progresso"></span></div>
+	</header>
+
+	<main>
+		<!-- Abertura -->
+		<section class="hero" id="inicio">
+			<canvas class="hero-net" id="rede" aria-hidden="true"></canvas>
+			<div class="hero-dots" aria-hidden="true"></div>
+
+			<div class="float-cards" aria-hidden="true">
+				<div class="float-card fc-1">
+					<span class="fc-icon">
+						<svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+					</span>
+					<span><b>Protótipo aprovado</b><small>pronto para desenvolver</small></span>
+				</div>
+				<div class="float-card fc-2">
+					<span class="fc-label">Status do sistema</span>
+					<b class="fc-status"><i></i>Tudo no ar</b>
+				</div>
+				<div class="float-card fc-3">
+					<span class="fc-icon">
+						<svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h10M4 17h7"/></svg>
+					</span>
+					<span><b>Pedido sincronizado</b><small>estoque e financeiro atualizados</small></span>
+				</div>
+				<div class="float-card fc-4">
+					<span class="fc-icon">
+						<svg viewBox="0 0 24 24"><path d="M5 19V11M10 19V5M15 19v-6M20 19V9"/></svg>
+					</span>
+					<span><b>Relatório do mês pronto</b><small>gerado sozinho às 7h</small></span>
+				</div>
+			</div>
+
+			<div class="hero-in">
+				<svg class="hero-glass" aria-hidden="true"><use href="#simbolo"/></svg>
+				<p class="pill enter" style="--d:0">
+					<i class="pill-dot"></i>Stark · Software sob medida
+				</p>
+				<h1 class="enter" style="--d:1">Sua empresa rodando <span class="shimmer">do seu jeito</span></h1>
+				<p class="hero-lede enter" style="--d:2">
+					Sistemas, aplicativos, automações e sites desenhados para o jeito que você
+					trabalha, enquanto você cuida do que só você pode fazer: <strong>o seu cliente</strong>.
+				</p>
+				<div class="hero-actions enter" style="--d:3">
+					<a class="btn btn-grad btn-lg" href="#contato">Iniciar meu projeto →</a>
+					<a class="btn btn-line btn-lg" href="#simulador">Simular meu ganho</a>
+				</div>
+				<ul class="checks enter" style="--d:4">
+					<li>Protótipo antes do código</li>
+					<li>100% do código é seu</li>
+					<li>Um ponto de contato do início ao fim</li>
+				</ul>
+			</div>
+
+			<div class="stats">
+				<div class="stat reveal">
+					<p class="stat-n"><span data-count="100">100</span>%</p>
+					<p>do código é seu</p>
+				</div>
+				<div class="stat reveal">
+					<p class="stat-n"><span data-count="4">4</span></p>
+					<p>etapas da ideia ao lançamento</p>
+				</div>
+				<div class="stat reveal">
+					<p class="stat-n"><span data-count="0">0</span></p>
+					<p>linhas de código antes do protótipo aprovado</p>
+				</div>
+			</div>
+		</section>
+
+		<div class="marquee" aria-label="Serviços: sistemas web, aplicativos, automação e IA, integrações e APIs, dashboards, sites e landing pages, lojas virtuais, evolução contínua">
+			<div class="marquee-track" aria-hidden="true">
+				<ul>
+					<li>Sistemas web</li><li>Aplicativos Android e iOS</li><li>Automação e IA</li><li>Integrações e APIs</li>
+					<li>Dashboards</li><li>Sites e landing pages</li><li>Lojas virtuais</li><li>Evolução contínua</li>
+				</ul>
+				<ul>
+					<li>Sistemas web</li><li>Aplicativos Android e iOS</li><li>Automação e IA</li><li>Integrações e APIs</li>
+					<li>Dashboards</li><li>Sites e landing pages</li><li>Lojas virtuais</li><li>Evolução contínua</li>
+				</ul>
+			</div>
+		</div>
+
+		<!-- O que a gente constrói -->
+		<section class="section-head section-head-top" id="servicos">
+			<p class="pill reveal">O que a gente constrói</p>
+			<h2 class="reveal">Três frentes. <span class="grad">Uma operação sob medida.</span></h2>
+			<p class="lede reveal">Cada uma resolve uma parte do seu dia a dia. Veja cada uma funcionando abaixo.</p>
+		</section>
+
+		<!-- Vitrine 1: sistemas web -->
+		<section class="showcase" id="sistemas" aria-labelledby="sistemas-titulo">
+			<div class="wrap show-grid">
+				<div class="show-text">
+					<p class="pill reveal">Sistema web · Gestão</p>
+					<h2 class="grad reveal" id="sistemas-titulo">Sistemas web</h2>
+					<p class="show-sub reveal">Da planilha ao sistema,<br>etapa por etapa.</p>
+
+					<div class="steps reveal" role="tablist" aria-label="Etapas do sistema web">
+						<button role="tab" id="passo-0" aria-controls="passo-texto" aria-selected="true"><span>01</span>Mapeia o processo</button>
+						<button role="tab" id="passo-1" aria-controls="passo-texto" aria-selected="false" tabindex="-1"><span>02</span>Desenha as telas</button>
+						<button role="tab" id="passo-2" aria-controls="passo-texto" aria-selected="false" tabindex="-1"><span>03</span>Migra os seus dados</button>
+						<button role="tab" id="passo-3" aria-controls="passo-texto" aria-selected="false" tabindex="-1"><span>04</span>Entrega o painel</button>
+					</div>
+					<div class="step-note reveal" id="passo-texto" role="tabpanel" aria-labelledby="passo-0" aria-live="polite">
+						<p id="passo-desc">Antes de qualquer tela, entendemos como o trabalho acontece hoje e onde ele trava.</p>
+						<p class="step-status"><i></i><span id="passo-status">Gargalos encontrados</span></p>
+					</div>
+				</div>
+
+				<div class="show-visual reveal">
+					<div class="device" aria-hidden="true">
+						<div class="device-bar"><i></i><i></i><i></i><span>Sistema de pedidos</span></div>
+						<div class="device-body">
+							<aside class="app-side">
+								<p class="app-brand"><svg><use href="#simbolo"/></svg>Sua empresa</p>
+								<p>Painel</p><p class="on">Pedidos</p><p>Clientes</p><p>Estoque</p><p>Relatórios</p>
+							</aside>
+							<div class="app-main">
+								<!-- 01: mapa do processo atual -->
+								<div class="view view-map active" data-view="0">
+									<p class="app-title">Processo atual · pedidos</p>
+									<div class="flow">
+										<div class="flow-node">Pedido chega pelo WhatsApp</div>
+										<div class="flow-node manual">Copiado na planilha<em>manual</em></div>
+										<div class="flow-node manual">Conferido por e-mail<em>manual</em></div>
+										<div class="flow-node manual">Lançado no financeiro<em>manual</em></div>
+									</div>
+									<p class="app-foot">3 passos manuais · o mesmo dado digitado 3 vezes</p>
+								</div>
+								<!-- 02: protótipo -->
+								<div class="view view-proto" data-view="1">
+									<p class="app-title">Protótipo · tela de pedidos</p>
+									<div class="sk-row"><i></i><i></i><i></i></div>
+									<div class="sk-table"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+									<p class="app-chip">Você aprova antes do código</p>
+								</div>
+								<!-- 03: migração -->
+								<div class="view view-migra" data-view="2">
+									<p class="app-title">Importando da planilha</p>
+									<div class="bar"><span></span></div>
+									<table>
+										<tr><th>Cliente</th><th>Cidade</th><th>Situação</th></tr>
+										<tr><td>Cliente 001</td><td>Curitiba</td><td>Ativo</td></tr>
+										<tr><td>Cliente 002</td><td>Recife</td><td>Ativo</td></tr>
+										<tr><td>Cliente 003</td><td>Goiânia</td><td>Inativo</td></tr>
+										<tr><td>Cliente 004</td><td>Campinas</td><td>Ativo</td></tr>
+										<tr><td>Cliente 005</td><td>Belém</td><td>Ativo</td></tr>
+										<tr><td>Cliente 006</td><td>Londrina</td><td>Inativo</td></tr>
+									</table>
+								</div>
+								<!-- 04: painel -->
+								<div class="view view-dash" data-view="3">
+									<p class="app-title">Painel · hoje</p>
+									<div class="kpis">
+										<p><small>Pedidos</small><b>48</b></p>
+										<p><small>Em andamento</small><b>12</b></p>
+										<p><small>Entregues</small><b>36</b></p>
+									</div>
+									<div class="chart"><i style="--h:42%"></i><i style="--h:58%"></i><i style="--h:50%"></i><i style="--h:72%"></i><i style="--h:64%"></i><i style="--h:86%"></i><i style="--h:78%"></i></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="device-meta">
+						<p><i></i>Exemplo ilustrativo</p>
+						<p class="device-count"><b id="passo-n">01</b> / 04 <span class="device-track"><span id="passo-barra"></span></span></p>
+					</div>
+				</div>
+				<svg class="connector" id="conector" aria-hidden="true"><path/></svg>
+			</div>
+
+			<div class="wrap">
+				<div class="banner reveal">
+					<p>O sistema trabalha. Sua equipe decide.</p>
+					<a class="btn btn-grad" href="#contato">Quero o meu sistema <span class="btn-arrow">→</span></a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Vitrine 2: aplicativos -->
+		<section class="showcase" id="apps" aria-labelledby="apps-titulo">
+			<div class="wrap show-grid show-grid-phone">
+				<div class="show-text">
+					<p class="pill reveal">Aplicativo · Android e iOS</p>
+					<h2 class="reveal" id="apps-titulo">Seu serviço no bolso, <span class="grad">nas duas lojas</span></h2>
+					<ul class="ticks reveal">
+						<li>Um único código para Android e iOS</li>
+						<li>Avisos no celular que trazem o cliente de volta</li>
+						<li>Do desenho das telas à publicação nas lojas</li>
+					</ul>
+					<a class="btn btn-grad reveal" href="#processo">Ver como funciona →</a>
+				</div>
+				<figure class="show-visual phone-wrap reveal">
+					<div class="phone" aria-hidden="true">
+						<div class="phone-notch"></div>
+						<div class="phone-toast">
+							<svg><use href="#simbolo"/></svg>
+							<span><b>Seu app</b>Seu pedido saiu para entrega</span>
+						</div>
+						<div class="phone-screen">
+							<p class="ph-top"><span>9:41</span><span>●●●</span></p>
+							<p class="ph-hello">Olá!<small>Acompanhe o seu pedido</small></p>
+							<div class="ph-card">
+								<p class="ph-order"><span>Pedido nº 1042</span><b>Chega em 18 min</b></p>
+								<ol class="ph-steps">
+									<li>Recebido</li><li>Em preparo</li><li>Saiu para entrega</li><li>Entregue</li>
+								</ol>
+							</div>
+							<div class="ph-list">
+								<p><i></i>2 × Item do cardápio<span>R$ 38,00</span></p>
+								<p><i></i>1 × Item do cardápio<span>R$ 12,00</span></p>
+							</div>
+							<p class="ph-btn">Falar com a loja</p>
+							<p class="ph-tabs"><i class="on"></i><i></i><i></i><i></i></p>
+						</div>
+					</div>
+					<figcaption>Exemplo ilustrativo de aplicativo de pedidos</figcaption>
+				</figure>
+			</div>
+		</section>
+
+		<!-- Vitrine 3: automação e integrações -->
+		<section class="showcase" id="automacao" aria-labelledby="auto-titulo">
+			<div class="wrap show-grid show-grid-tools">
+				<div class="show-text">
+					<p class="pill reveal">Automação · IA · Integrações</p>
+					<h2 class="reveal" id="auto-titulo">Suas ferramentas <span class="grad">trabalhando juntas</span></h2>
+					<p class="lede reveal">Planilha, e-mail, loja, financeiro, WhatsApp: conectamos o que você já usa para os dados
+						circularem sozinhos, e colocamos IA onde ela poupa trabalho de verdade.</p>
+					<ol class="numbered reveal">
+						<li><b>Com o que você já tem</b>Sem trocar tudo de uma vez. Partimos das ferramentas que a equipe já usa.</li>
+						<li><b>Sem copiar e colar</b>O dado nasce em um lugar e chega sozinho onde precisa.</li>
+						<li><b>IA onde faz diferença</b>Triagem de mensagens, resumos e respostas de rotina, não enfeite.</li>
+					</ol>
+					<a class="btn btn-grad reveal" href="#processo">Ver como funciona →</a>
+				</div>
+
+				<div class="show-visual reveal">
+					<div class="connect" id="conectar">
+						<div class="connect-pick">
+							<p class="connect-title"><span>1</span>O que a sua empresa usa hoje?</p>
+							<div class="tools" role="group" aria-label="Ferramentas que você usa">
+								<button aria-pressed="true" data-tool="Planilhas"><svg viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M4 15h16M10 5v14"/></svg>Planilhas</button>
+								<button aria-pressed="true" data-tool="WhatsApp"><svg viewBox="0 0 24 24"><path d="M5 19l1.3-3.6A7.5 7.5 0 1 1 9 18z"/></svg>WhatsApp</button>
+								<button aria-pressed="false" data-tool="E-mail"><svg viewBox="0 0 24 24"><path d="M4 6h16v12H4zM4 7l8 6 8-6"/></svg>E-mail</button>
+								<button aria-pressed="false" data-tool="Loja virtual"><svg viewBox="0 0 24 24"><path d="M5 8h14l-1 11H6zM9 8V6a3 3 0 0 1 6 0v2"/></svg>Loja virtual</button>
+								<button aria-pressed="true" data-tool="Financeiro"><svg viewBox="0 0 24 24"><path d="M12 4v16M16 8.5c0-1.4-1.8-2.5-4-2.5s-4 1.1-4 2.5S9.8 11 12 11s4 1.1 4 2.5-1.8 2.5-4 2.5-4-1.1-4-2.5"/></svg>Financeiro</button>
+								<button aria-pressed="false" data-tool="ERP"><svg viewBox="0 0 24 24"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>ERP</button>
+							</div>
+							<button class="btn btn-grad btn-block" id="conectar-btn">Conectar com a Stark →</button>
+							<p class="connect-hint" id="conectar-dica" hidden>Escolha pelo menos uma ferramenta.</p>
+						</div>
+						<div class="connect-done" hidden>
+							<p class="connect-title"><span>2</span>Tudo conversando</p>
+							<svg class="hub" id="hub" viewBox="0 0 320 220" aria-hidden="true"></svg>
+							<p class="connect-ok" id="conectar-resultado" role="status"></p>
+							<button class="btn btn-line btn-block" id="conectar-voltar">Escolher de novo</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Outros serviços -->
+		<section class="wrap more" aria-labelledby="mais-titulo">
+			<h3 class="more-title reveal" id="mais-titulo">E também</h3>
+			<div class="more-grid">
+				<article class="card reveal">
+					<p class="card-tag">Presença · Conversão</p>
+					<h3>Sites e landing pages</h3>
+					<p>Páginas rápidas, bem escritas e fáceis de achar no Google, pensadas para transformar visita em contato.</p>
+				</article>
+				<article class="card reveal">
+					<p class="card-tag">E-commerce</p>
+					<h3>Lojas virtuais</h3>
+					<p>Catálogo, carrinho, pagamento e entrega integrados ao seu estoque e ao seu financeiro.</p>
+				</article>
+				<article class="card reveal">
+					<p class="card-tag">Indicadores · Decisão</p>
+					<h3>Dashboards</h3>
+					<p>Os números do negócio reunidos em uma tela clara, atualizada sozinha.</p>
+				</article>
+				<article class="card reveal">
+					<p class="card-tag">Suporte · Manutenção</p>
+					<h3>Evolução contínua</h3>
+					<p>Correções, melhorias e funções novas depois do lançamento, no ritmo do seu negócio.</p>
+				</article>
+			</div>
+		</section>
+
+		<!-- Simulador -->
+		<section class="section sim-section" id="simulador" aria-labelledby="sim-titulo">
+			<div class="section-head">
+				<p class="pill reveal">Simulador</p>
+				<h2 class="reveal" id="sim-titulo">Veja quanto tempo <span class="grad">volta para você</span></h2>
+				<p class="lede reveal">Ajuste a equipe e as horas gastas em tarefas repetitivas e veja quanto a automação pode devolver por mês.</p>
+			</div>
+			<div class="sim reveal">
+				<div class="sim-in">
+					<p class="kicker">Seu cenário</p>
+					<h3>Quanto tempo vai em trabalho manual?</h3>
+					<label class="range">
+						<span class="range-top"><span>Pessoas com tarefas repetitivas</span><output id="sim-pessoas-v">4</output></span>
+						<input type="range" id="sim-pessoas" min="1" max="30" value="4">
+						<span class="range-ends"><span>1</span><span>30</span></span>
+					</label>
+					<label class="range">
+						<span class="range-top"><span>Horas por semana, cada uma</span><output id="sim-horas-v">6 h</output></span>
+						<input type="range" id="sim-horas" min="1" max="20" value="6">
+						<span class="range-ends"><span>1 h</span><span>20 h</span></span>
+					</label>
+					<p class="sim-note">Considera 4,33 semanas por mês e que metade dessas tarefas pode ser automatizada.
+						Premissa conservadora de propósito; o número real sai do diagnóstico.</p>
+				</div>
+				<div class="sim-out" aria-live="polite">
+					<p class="kicker">Horas devolvidas / mês</p>
+					<p class="sim-big"><b id="sim-ganho">52</b> h <span class="sim-chip" id="sim-dias">≈ 6,5 dias de trabalho</span></p>
+					<p class="sim-desc">devolvidas à equipe, de <b id="sim-total">104 h</b> gastas hoje por mês em tarefas repetitivas.</p>
+					<div class="sim-bars">
+						<p><span>Hoje, em tarefas manuais</span><b id="sim-total-2">104 h</b></p>
+						<div class="sim-bar"><span style="width:100%"></span></div>
+						<p><span>Com automação</span><b id="sim-resto">52 h</b></p>
+						<div class="sim-bar sim-bar-accent"><span id="sim-resto-barra" style="width:50%"></span></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Processo -->
+		<section class="section" id="processo" aria-labelledby="proc-titulo">
+			<div class="section-head">
+				<p class="pill reveal">Como trabalhamos</p>
+				<h2 class="reveal" id="proc-titulo">Da ideia ao lançamento</h2>
+			</div>
+			<ol class="process">
+				<li class="reveal">
+					<span class="process-n">01</span>
+					<h3>Descoberta</h3>
+					<p>Ouvimos primeiro. Entendemos o problema, quem vai usar e o que precisa existir na primeira versão.</p>
+				</li>
+				<li class="reveal">
+					<span class="process-n">02</span>
+					<h3>Protótipo</h3>
+					<p>Você navega e aprova cada tela antes de começarmos. Ajustar aqui custa horas; no código, semanas.</p>
+				</li>
+				<li class="reveal">
+					<span class="process-n">03</span>
+					<h3>Desenvolvimento</h3>
+					<p>Entregas curtas e frequentes. Você acompanha o produto funcionando, não um cronograma.</p>
+				</li>
+				<li class="reveal">
+					<span class="process-n">04</span>
+					<h3>Lançamento</h3>
+					<p>Publicamos, monitoramos e seguimos evoluindo o produto junto com o seu negócio.</p>
+				</li>
+			</ol>
+		</section>
+
+		<!-- Quem somos -->
+		<section class="section about" id="quem-somos" aria-labelledby="sobre-titulo">
+			<div class="about-text">
+				<p class="pill reveal">Quem somos</p>
+				<h2 class="reveal" id="sobre-titulo">A gente não entrega só código. Entrega o seu negócio <span class="grad">rodando</span>.</h2>
+				<p class="reveal">A Stark existe para que pequenas e médias empresas tenham software feito para elas, em vez de se adaptar a
+					ferramentas genéricas que quase servem.</p>
+				<p class="reveal">Projetamos e desenvolvemos sistemas, aplicativos, automações e sites com engenharia de verdade: protótipo
+					antes do código, entregas curtas e uma pessoa da Stark acompanhando você do começo ao fim.</p>
+				<a class="btn btn-grad reveal" href="#contato">Falar com a Stark →</a>
+			</div>
+			<div class="about-cards">
+				<article class="card card-row reveal">
+					<span class="card-n">1</span>
+					<div><h3>Feito sob medida</h3><p>Nada de template. Seu processo, sua marca, seus clientes.</p></div>
+				</article>
+				<article class="card card-row reveal">
+					<span class="card-n">2</span>
+					<div><h3>Protótipo antes do código</h3><p>Você vê e aprova as telas antes de uma linha ser escrita. Sem surpresas depois.</p></div>
+				</article>
+				<article class="card card-row reveal">
+					<span class="card-n">3</span>
+					<div><h3>O código é seu</h3><p>100% do que construímos fica com você. Sem ficar preso a ninguém.</p></div>
+				</article>
+			</div>
+		</section>
+
+		<!-- Dúvidas -->
+		<section class="section faq-section" id="duvidas" aria-labelledby="faq-titulo">
+			<div class="section-head">
+				<p class="pill reveal">Dúvidas</p>
+				<h2 class="reveal" id="faq-titulo">Perguntas frequentes</h2>
+			</div>
+			<div class="faq reveal">
+				<details>
+					<summary>Preciso entender de tecnologia?</summary>
+					<p>Não. Você aprova telas e funcionalidades, não código. A gente traduz o técnico para o seu dia a dia, e você tem
+						sempre a mesma pessoa da Stark como ponto de contato.</p>
+				</details>
+				<details>
+					<summary>Quanto tempo leva um projeto?</summary>
+					<p>Depende do tamanho: um site fica pronto bem antes de um sistema completo. Na descoberta recortamos a primeira
+						versão para ela ir ao ar o quanto antes, e você conhece o prazo antes de começarmos.</p>
+				</details>
+				<details>
+					<summary>Quanto custa?</summary>
+					<p>Cada projeto é orçado a partir do escopo definido na descoberta. Você recebe o valor por escrito antes de qualquer
+						desenvolvimento.</p>
+				</details>
+				<details>
+					<summary>O código fica comigo?</summary>
+					<p>Sim. 100% do código é seu, junto com os acessos ao que for publicado.</p>
+				</details>
+				<details>
+					<summary>E depois do lançamento?</summary>
+					<p>Seguimos com você: monitoramos, corrigimos e evoluímos o produto no ritmo do seu negócio.</p>
+				</details>
+				<details>
+					<summary>Vocês atendem o meu ramo?</summary>
+					<p>Software sob medida parte do seu processo, não de um ramo específico. E se a Stark não for a melhor opção para o
+						seu caso, a gente fala isso logo na primeira conversa.</p>
+				</details>
+			</div>
+		</section>
+
+		<!-- Chamada final -->
+		<section class="wrap cta-wrap" id="contato">
+			<div class="cta reveal">
+				<h2>Pronto para tirar sua ideia do papel?</h2>
+				<p>Conte em poucas linhas o que você precisa. A gente responde com os próximos passos.</p>
+				<!-- TROQUE pelo e-mail real da empresa (aqui e no rodapé) -->
+				<a class="btn btn-dark btn-lg" href="mailto:contato@seudominio.com.br?subject=Quero%20um%20projeto%20com%20a%20Stark">contato@seudominio.com.br →</a>
+				<small>Primeiro a gente entende o seu caso. Depois fala de tecnologia.</small>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrap footer-grid">
+			<div class="footer-brand">
+				<a class="brand" href="#inicio" aria-label="Stark, voltar ao topo">
+					<svg class="brand-mark" aria-hidden="true"><use href="#simbolo"/></svg>
+					<span>Stark</span>
+				</a>
+				<p>Sistemas, aplicativos, automações e sites sob medida, feitos para o jeito que a sua empresa trabalha.</p>
+				<a class="btn btn-grad btn-sm" href="#contato">Iniciar projeto</a>
+			</div>
+			<nav aria-label="Serviços">
+				<p class="footer-h">Serviços</p>
+				<a href="#sistemas">Sistemas web</a>
+				<a href="#apps">Aplicativos</a>
+				<a href="#automacao">Automação e IA</a>
+				<a href="#servicos">Sites e lojas virtuais</a>
+			</nav>
+			<nav aria-label="Navegar">
+				<p class="footer-h">Navegar</p>
+				<a href="#simulador">Simulador</a>
+				<a href="#processo">Como trabalhamos</a>
+				<a href="#quem-somos">Quem somos</a>
+				<a href="#duvidas">Dúvidas</a>
+			</nav>
+			<div>
+				<p class="footer-h">Contato</p>
+				<a href="mailto:contato@seudominio.com.br">contato@seudominio.com.br</a>
+			</div>
+		</div>
+		<div class="wrap footer-bottom">
+			<p>© <span id="ano"></span> Stark. Software sob medida.</p>
+			<a href="#inicio">Voltar ao topo ↑</a>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+</html>
